@@ -4,7 +4,7 @@ from fsm import FSM
 logging.basicConfig(level=logging.INFO)
 
 class ModThreeFSM(FSM):
-    def __init__(self):
+    def __init__(self) -> None:
         states = ['0', '1', '2']  # represent remainder states as strings
         alphabet = ['0', '1']
         initial_state = '0'
@@ -19,7 +19,7 @@ class ModThreeFSM(FSM):
     def run(self, binary_string: str) -> int:
         self.reset()
         super().run(binary_string)
-        final_state = self.get_final_state()  # checks if current_state is final
+        final_state: str = self.get_final_state()
         return int(final_state)
 
 
