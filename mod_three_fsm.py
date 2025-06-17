@@ -3,6 +3,7 @@ from fsm import FSM
 
 logging.basicConfig(level=logging.INFO)
 
+
 class ModThreeFSM(FSM):
     def __init__(self) -> None:
         states = ['0', '1', '2']  # represent remainder states as strings

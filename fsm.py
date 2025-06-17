@@ -1,5 +1,6 @@
 import logging
 
+
 class FSM:
     """
     Generic Finite State Machine class.
@@ -23,6 +24,7 @@ class FSM:
         final_states: list[str],
         transitions: dict[str, dict[str, str]]
     ) -> None:
+
         self.logger: logging.Logger = logging.getLogger(self.__class__.__name__)
 
         if initial_state not in states:
@@ -46,6 +48,7 @@ class FSM:
         alphabet: list[str],
         transitions: dict[str, dict[str, str]]
     ) -> bool:
+
         if not transitions:
             return False
 

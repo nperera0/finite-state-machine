@@ -63,7 +63,7 @@ class TestModThreeFSM(unittest.TestCase):
 
     def test_long_binary_string(self):
         binary = '1' * 100  # 100 ones
-        # Sum of bits = 100 → 100 % 3 = 1
+        # binary for (2^100 - 1), which % 3 == 0
         self.assertEqual(self.fsm.run(binary), 0)
 
     def test_leading_zeros(self):
