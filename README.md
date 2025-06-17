@@ -19,14 +19,14 @@ This is a self-contained Python class. Simply copy `fsm.py` into your project.
 ```bash
 
 fsm/
-├── fsm.py                # Generic FSM base class
-├── mod_three_fsm.py      # Mod-3 FSM subclass (uses FSM.py)
+├── fsm.py                    # Generic FSM base class
+├── mod_three_fsm.py          # Mod-3 FSM subclass (uses FSM.py)
 ├── tests/
 │   ├── test_fsm.py           # Tests for generic FSM class
 │   └── test_mod_three_fsm.py # Tests specifically for ModThreeFSM
-├── README.md             # Project overview, usage instructions
-├── requirements.txt      # Optional: list dependencies (e.g. pytest, coverage)
-└── .gitignore            # Ignore __pycache__, .env, etc.
+├── README.md                 # Project overview, usage instructions
+├── requirements.txt          # Optional: list dependencies (e.g. pytest, coverage)
+└── .gitignore                # Ignore __pycache__, .env, etc.
 ```
 
 ---
@@ -94,6 +94,7 @@ Unit tests are included in `test_fsm.py` using the `unittest` module.
 
 ```bash
 python -m unittest tests/test_fsm.py
+python -m unittest tests/mod_three_fsm.py
 ```
 
 ---
